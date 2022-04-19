@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 #container{
     width: 300px;
 }
@@ -12,4 +15,39 @@
 }
 #sugesation{
     overflow-x: scroll;
+}
+#sugesation>div{
+    border-bottom: 0.5px solid gray;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+#sugesation>div:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.192);
+    color: white;
+}
+#show_movie{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+#show_movie>:nth-child(2){
+    margin-left: 20px;
+}
+#show_movie>div>p{
+    font-size: 20px;
+}
+#show_movie>div>img{
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#show_movie:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
