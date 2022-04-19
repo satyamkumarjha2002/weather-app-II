@@ -44,6 +44,7 @@ function debauncing(func,delay){
 function showDetails(element){
     event.preventDefault();
     let show_movie=document.querySelector("#show_movie");
+   
     show_movie.innerHTML=null;
     let div1=document.createElement("div")
     let image=document.createElement("img");
@@ -58,5 +59,5 @@ function showDetails(element){
     type.innerText=element.Type;
     div2.append(name,realese_year,type);
     show_movie.append(div1,div2);
-    console.log(element);
+    show_movie.style.display="flex";
 }
